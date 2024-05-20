@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 초기화는 반드시 css 맨 위에 작성되어야 한다. -->
+    <link rel="stylesheet" href="../reset.css">
+    <style></style>
+</head>
+<body>
+    <!-- css 우선순위 -->
+    <!--
+        규칙
+        - 나중에 선언된 것이 높은 우선 순위를 가진다.
+            (위의 링크는 7번, 스타일은 8번이므로 스타일이 우선 순위)
+        작성 순서와 상관 없이  tag + class < id 에서 우서수위를 가진다'
+        부모로부터 상속받은 속성은 우선순위가 가장 낮다.
+        우선운위가 같은 경우 부모-자식 관계가 많은 순서로 우선순위를 가진다.
+
+        important 문법은 가장 높은 우선순위를 가지나, 사용하지 않는 것이 좋다.
+
+        우선 순위
+            1. important
+            2. html
+    -->
+
+    <p class="hi" id="hello">안녕하세요</p>
+    <p>class</p>
+</body>
+</html>
