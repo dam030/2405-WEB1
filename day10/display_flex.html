@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+
+        .container {
+            /* 자식요소들을 정렬 할 수 있게 만들어준다. */
+        display: flex;
+            /* 가로 세로 정렬 */
+            justify-content: center;
+            align-items: flex-end;
+                /* flex-start, center, end */
+                /* justify-content: space-between; */
+            gap: 24px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border: 1px solid #222;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <!-- flex: 내 안의 자식(컨텐츠)들을 정렬(관리)하는 속성 -->
+    <!-- float: 나(컨텐츠)를 정렬하는 속성 (컨텐츠들이 유령 속성이 됨) -->
+    <div class="container">
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+    </div>
+</body>
+</html>

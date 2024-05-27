@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .hi {
+            float: left;
+            width: 100px;
+            height: 100px;
+            border: 1px solid #222;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #222;
+            background-color: pink;
+            float: left;
+        }
+
+        .분리 {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <!-- 주석: ctrl + / (초록색 글씨 만들기) -->
+    <!-- 줄 복사: alt + shift + 방향키(위, 아래) -->
+    <!-- 다중 선택: ctrl + D -->
+    <!-- 동시 선택: ctrl + alt + 방향키 -->
+    <div class="hi">안녕하세요</div>
+    <div class="hi">안녕하세요</div>
+    <div class="hi">안녕하세요</div>
+    <div class="hi">안녕하세요</div>
+
+    <div class="box 분리">BOX</div>
+    <div class="box">BOX</div>
+    <div class="box">BOX</div>
+    <div class="box">BOX</div>
+    
+    <div style="clear: both;">테스트</div>
+
+    <div class="container">
+        <div class="box">내부Box</div>
+        <div class="box">내부Box</div>
+        <div class="box">내부Box</div>
+        <div class="box">내부Box</div>
+    </div>
+    <div style="clear: both;">다음에 오는 애</div>
+
+    <!-- float 속성은 다양한 문제점을 가지고 있다. -->
+</body>
+</html>
