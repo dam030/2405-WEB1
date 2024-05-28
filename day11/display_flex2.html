@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .container {
+            display: flex;
+            /* justify-content: space-between; 사이 공간 띄어짐*/
+            /* flex-direction: row; < flex 사용했을 때 기본값 */
+            flex-direction: column;
+
+            /* justify-content: 정렬되는 방향을 기준으로 정렬 */
+            /* align-content: 중심축을 기준으로 정렬 */
+            justify-content: space-between
+
+            /* flex의 방향에 따라 가로, 세로는 바꿀 수 있다. */
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            border: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .container {
+            /* width: 420px; */
+            /* 가로길이를 없애주면 컨테이너가 화면 크기별로 줄어들고 늘어난다 */
+            height: 800px;
+            border: 1px solid #222;
+            display: flex;
+
+            justify-content: space-between;
+            gap: 16px;
+            /* gap은 사회적 거리두기 */
+            /*  gap는 아래 사항이 축약되서 적용 된 것
+                row-gap: 16px;
+                column-gap: 16px;
+             */
+            
+            /* 컨텐츠가 부모 밖으로 넘쳤을 때
+            줄바꿈을 토애 여러 줄로 표시할 수 있는 속성 */
+            flex-wrap: wrap;
+            /* 컨텐츠가 여러 줄이 되었을 때 수직방향 정렬을 다룰 수 있다. */
+            align-content: flex-start;
+        }
+        
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border: 1px solid #222;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">BOX</div>
+        <div class="box">BOX</div>
+        <div class="box">BOX</div>
+        <div class="box">BOX</div>
+        <div class="box">BOX</div>
+    </div>
+    <!-- div.container>div.box{BOX}*5 -->
+</body>
+</html>
